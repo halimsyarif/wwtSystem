@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="wwtSystemDataSet" targetNamespace="http://tempuri.org/wwtSystemDataSet.xsd" xmlns:mstns="http://tempuri.org/wwtSystemDataSet.xsd" xmlns="http://tempuri.org/wwtSystemDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="wwtSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="wwtSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.wwtSystem.Properties.Settings.GlobalReference.Default.wwtSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EquipmentTableAdapter" GeneratorDataComponentClassName="EquipmentTableAdapter" Name="Equipment" UserDataComponentName="EquipmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="wwtSystemConnectionString (Settings)" DbObjectName="dbo.Equipment" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KodeAlat, NamaAlat, [Tahun Beli], [Posisi Alat], [Kondisi Alat], [No. NCR], [No. Buang Aktiva Tetap], History FROM dbo.Equipment</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KodeAlat" DataSetColumn="KodeAlat" />
+              <Mapping SourceColumn="NamaAlat" DataSetColumn="NamaAlat" />
+              <Mapping SourceColumn="Tahun Beli" DataSetColumn="Tahun Beli" />
+              <Mapping SourceColumn="Posisi Alat" DataSetColumn="Posisi Alat" />
+              <Mapping SourceColumn="Kondisi Alat" DataSetColumn="Kondisi Alat" />
+              <Mapping SourceColumn="No. NCR" DataSetColumn="No_ NCR" />
+              <Mapping SourceColumn="No. Buang Aktiva Tetap" DataSetColumn="No_ Buang Aktiva Tetap" />
+              <Mapping SourceColumn="History" DataSetColumn="History" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="wwtSystemDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="wwtSystemDataSet" msprop:Generator_UserDSName="wwtSystemDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Equipment" msprop:Generator_TableClassName="EquipmentDataTable" msprop:Generator_TableVarName="tableEquipment" msprop:Generator_TablePropName="Equipment" msprop:Generator_RowDeletingName="EquipmentRowDeleting" msprop:Generator_RowChangingName="EquipmentRowChanging" msprop:Generator_RowEvHandlerName="EquipmentRowChangeEventHandler" msprop:Generator_RowDeletedName="EquipmentRowDeleted" msprop:Generator_UserTableName="Equipment" msprop:Generator_RowChangedName="EquipmentRowChanged" msprop:Generator_RowEvArgName="EquipmentRowChangeEvent" msprop:Generator_RowClassName="EquipmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeAlat" msprop:Generator_ColumnVarNameInTable="columnKodeAlat" msprop:Generator_ColumnPropNameInRow="KodeAlat" msprop:Generator_ColumnPropNameInTable="KodeAlatColumn" msprop:Generator_UserColumnName="KodeAlat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaAlat" msprop:Generator_ColumnVarNameInTable="columnNamaAlat" msprop:Generator_ColumnPropNameInRow="NamaAlat" msprop:Generator_ColumnPropNameInTable="NamaAlatColumn" msprop:Generator_UserColumnName="NamaAlat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tahun_x0020_Beli" msprop:Generator_ColumnVarNameInTable="columnTahun_Beli" msprop:Generator_ColumnPropNameInRow="Tahun_Beli" msprop:Generator_ColumnPropNameInTable="Tahun_BeliColumn" msprop:Generator_UserColumnName="Tahun Beli" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Posisi_x0020_Alat" msprop:Generator_ColumnVarNameInTable="columnPosisi_Alat" msprop:Generator_ColumnPropNameInRow="Posisi_Alat" msprop:Generator_ColumnPropNameInTable="Posisi_AlatColumn" msprop:Generator_UserColumnName="Posisi Alat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kondisi_x0020_Alat" msprop:Generator_ColumnVarNameInTable="columnKondisi_Alat" msprop:Generator_ColumnPropNameInRow="Kondisi_Alat" msprop:Generator_ColumnPropNameInTable="Kondisi_AlatColumn" msprop:Generator_UserColumnName="Kondisi Alat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No__x0020_NCR" msprop:Generator_ColumnVarNameInTable="columnNo__NCR" msprop:Generator_ColumnPropNameInRow="No__NCR" msprop:Generator_ColumnPropNameInTable="No__NCRColumn" msprop:Generator_UserColumnName="No_ NCR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No__x0020_Buang_x0020_Aktiva_x0020_Tetap" msprop:Generator_ColumnVarNameInTable="columnNo__Buang_Aktiva_Tetap" msprop:Generator_ColumnPropNameInRow="No__Buang_Aktiva_Tetap" msprop:Generator_ColumnPropNameInTable="No__Buang_Aktiva_TetapColumn" msprop:Generator_UserColumnName="No_ Buang Aktiva Tetap" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="History" msprop:Generator_ColumnVarNameInTable="columnHistory" msprop:Generator_ColumnPropNameInRow="History" msprop:Generator_ColumnPropNameInTable="HistoryColumn" msprop:Generator_UserColumnName="History" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

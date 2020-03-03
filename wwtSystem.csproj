@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34168148-1576-419F-8649-22AF6DCC1667}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>wwtSystem</RootNamespace>
+    <AssemblyName>wwtSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DailyCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DailyCheck.Designer.cs">
+      <DependentUpon>DailyCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs" />
+    <Compile Include="My_Db.cs" />
+    <Compile Include="Domestik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Domestik.Designer.cs">
+      <DependentUpon>Domestik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="equipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="equipment.Designer.cs">
+      <DependentUpon>equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtama.Designer.cs">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDaily.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputDaily.Designer.cs">
+      <DependentUpon>InputDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputEquipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputEquipment.Designer.cs">
+      <DependentUpon>InputEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputProses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputProses.Designer.cs">
+      <DependentUpon>InputProses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="levelRawpit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="levelRawpit.Designer.cs">
+      <DependentUpon>levelRawpit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProsesWWT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProsesWWT.Designer.cs">
+      <DependentUpon>ProsesWWT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="wwtSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>wwtSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DailyCheck.resx">
+      <DependentUpon>DailyCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Domestik.resx">
+      <DependentUpon>Domestik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipment.resx">
+      <DependentUpon>equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtama.resx">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDaily.resx">
+      <DependentUpon>InputDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputEquipment.resx">
+      <DependentUpon>InputEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputProses.resx">
+      <DependentUpon>InputProses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="levelRawpit.resx">
+      <DependentUpon>levelRawpit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProsesWWT.resx">
+      <DependentUpon>ProsesWWT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="wwtSystemDataSet.xsc">
+      <DependentUpon>wwtSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="wwtSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>wwtSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="wwtSystemDataSet.xss">
+      <DependentUpon>wwtSystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\106830.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\edit.png" />
+    <Content Include="res\defaultImage.png" />
+    <None Include="res\Set svg vector icon-32px.png" />
+    <None Include="res\Set svg vector icon-16px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
